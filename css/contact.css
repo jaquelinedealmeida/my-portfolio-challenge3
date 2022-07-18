@@ -7,16 +7,16 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    box-sizing: border-box;
  
 }
 
 
 .contact img {
-    width: 20%;
-    margin-top: 8rem;
+    width: 25%;
+    margin-top: 6rem;
     margin-left:-10rem;
-    border: solid rgb(228, 116, 11);
-    border-bottom-right-radius: 3rem;
+
     padding:0%;
 }
 
@@ -25,11 +25,11 @@
 }
    
 form {
-    margin: 4rem;
-    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     width: 100%;
     max-width: 48.6rem;
-    margin-right: 10rem;
+   
 }
 
 label {
@@ -38,12 +38,11 @@ label {
 }
 
 form label, form  legend{
-display: flex;
+   display: flex;
    flex-direction: column;
     font-size: 1.2rem;
-    margin: 0 0 10px;
     font-family: Inter;
-    gap: 6rem;
+ 
 
 }
 
@@ -53,9 +52,8 @@ border-color: white;
 }
 
 .input-padrao {
-    display: block;
+   
     margin: 0 0 20px;
-    padding: 10px 25px;
     width: 60%;
     max-width: 48.6rem;
    
