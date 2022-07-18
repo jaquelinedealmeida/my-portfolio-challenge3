@@ -12,74 +12,73 @@
 
 
 .contact img {
-    width: 30rem;
-    height: 30rem;
-    margin-top: 10rem;
-    margin-left:-25rem;
+    width: 20%;
+    margin-top: 8rem;
+    margin-left:-10rem;
     border: solid rgb(228, 116, 11);
     border-bottom-right-radius: 3rem;
+    padding:0%;
 }
 
 .contact h2 {
     color:white;
 }
-
    
-    form {
-        margin: 4rem;
-        justify-content: center;
-        width: 100%;
-        max-width: 48.6rem;
-        margin-right: 20rem;
-    }
+form {
+    margin: 4rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 48.6rem;
+    margin-right: 10rem;
+}
 
-    label {
-        color: white;
-        font-weight:bold;
-    }
+label {
+    color: white;
+    font-weight:bold;
+}
 
-    form label, form  legend{
-       display: flex;
-       flex-direction: column;
-        font-size: 1.2rem;
-        margin: 0 0 10px;
-        font-family: Inter;
-        gap: 6rem;
+form label, form  legend{
+display: flex;
+   flex-direction: column;
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    font-family: Inter;
+    gap: 6rem;
+
+}
+
+input, textarea {
+outline: none;
+border-color: white;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 60%;
+    max-width: 48.6rem;
    
-    }
+}
 
-   input, textarea {
-   outline: none;
-   border-color: white;
-   }
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(183, 88, 4);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin-left: 6rem;
 
-    .input-padrao {
-        display: block;
-        margin: 0 0 20px;
-        padding: 10px 25px;
-        width: 60%;
-        max-width: 48.6rem;
-       
-    }
+}
 
-    .enviar {
-        width: 40%;
-        padding: 15px 0;
-        background: rgb(183, 88, 4);
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        border: none;
-        border-radius: 5px;
-        transition: 1s all;
-        cursor: pointer;
-        margin-left: 6rem;
-
-    }
-
-    .enviar:hover {
-        background-color: rgb(183, 88, 4);
-        transform: scale(1.2);
-    }
+.enviar:hover {
+    background-color: rgb(183, 88, 4);
+    transform: scale(1.2);
+}
 
    
