@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
+    margin:0;
  
 }
 
@@ -27,9 +28,14 @@
 form {
     margin-top: 4rem;
     margin-bottom: 4rem;
-    width: 100%;
+    margin-right: 10rem;
+   
     max-width: 48.6rem;
    
+}
+
+.form-contact {
+    width: 50%;
 }
 
 label {
@@ -40,27 +46,53 @@ label {
 form label, form  legend{
    display: flex;
    flex-direction: column;
-    font-size: 1.2rem;
-    font-family: Inter;
+   font-size: 1.2rem;
+   font-family: Inter;
+   padding-bottom: 0.3rem;
+   
  
-
 }
 
 input, textarea {
-outline: none;
-border-color: white;
+    outline: none;
+    border-color: white;
+    padding: 0.5rem;
+}
+
+.form-data {
+    padding: 1.3rem;
+    position:relative;
+}
+
+
+.form-data i {
+    position: absolute;
+    top:55px;
+    right: 5rem;
+    visibility: hidden;
+}
+
+.form-data small {
+    position: absolute;
+    bottom:0;
+    left: 1.5rem;
+    visibility: hidden;
+    font-family: Inter;
+    font-weight: bold;
 }
 
 .input-padrao {
    
-    margin: 0 0 20px;
-    width: 60%;
+    margin: 0 0 ;
+    width: 90%;
     max-width: 48.6rem;
+    color: rgb(0, 0, 0);
+    font-family: Inter;
    
 }
 
 .enviar {
-    width: 40%;
+    width: 50%;
     padding: 15px 0;
     background: rgb(183, 88, 4);
     color: white;
@@ -70,7 +102,8 @@ border-color: white;
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
-    margin-left: 6rem;
+    margin-left: 9rem;
+    margin-top:1.9rem;
 
 }
 
@@ -79,4 +112,30 @@ border-color: white;
     transform: scale(1.2);
 }
 
+/*ERROR AND SUCCESS*/
+
+.form-data.success textarea {
+    border-color:rgb(4, 249, 29);
+}
+
+.form-data.error  input {
+    border-color:rgb(255, 45, 3);
+  
+}
+
+
+.form-data.success i.fa-check-circle {
+    color:rgb(4, 139, 18);
+    visibility:visible;   
+}
+
+.form-data.error i.fa-exclamation-circle {
+    color:rgb(255, 45, 3);
+    visibility:visible;   
    
+}
+
+.form-data.error small {
+    visibility:visible; 
+    color:rgb(243, 226, 212);
+}

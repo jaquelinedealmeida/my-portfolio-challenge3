@@ -1,7 +1,8 @@
 * body {
 background-color: rgb(248, 245, 240);
-margin: 0%;
+margin: 0;
 width: 100vw;
+min-width: 100vh;
 box-sizing: border-box;
 list-style: none;
 }
@@ -198,7 +199,7 @@ h3 {
 font-weight: bold;
 font-size: 2rem;
 font-style: italic;
-color:antiquewhite
+color:antiquewhite;
 
 }
 /*SERVICOS */
@@ -275,7 +276,7 @@ button {
       
 }
 button:hover {
-    background-color: rgb(243, 234, 221);
+    background-color: antiquewhite;
     transition: all 1s;
 }
 
@@ -286,29 +287,27 @@ button:hover {
     padding-bottom: 10rem;
     background-color:rgb(206, 104, 21);
     opacity: 90%;
-   
-   
-   
+  
 }
 .portfolio h2 {
     color:#ffffff;
 
 }
 .images { 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
      
 }
 
-.images img {
- border-radius: 3rem;
- cursor: pointer;
-transition: all 0.2s;
-width: 80%;
+.cases img {
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 90%;
 }
 
-.images:hover {
-  width: 90%;
+.cases:hover {
+  width: 30%;
 }
 
 .images a {
@@ -320,7 +319,7 @@ width: 80%;
 
 .images p {
     text-align: center;
-    margin-right: 3rem;
+    margin-right: 6rem;
 }
 
 
@@ -329,6 +328,8 @@ footer {
     
     background-color:rgb(253, 250, 250);
     text-align: center;
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 .logo-footer {

@@ -142,21 +142,41 @@
         <section id="contacts" class="contact">
             <h2>Contatos</h2>
             <img src="./img/undraw_Mobile_posts_re_bpuw.svg" />
-            <div class="form">
-                <form>
-                    <label for="nome">Nome e Sobrenome </label>
-                    <input type="text" id="nomesobrenome" class="input-padrao" required>
-                    <!--palavra reservada para incluir os dados-->
-
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
-
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-
-                    <label for="mensage">Mensagem</label>
-                    <textarea cols="64" rows="10" id="mensage" class="input-padrao" required placeholder="Escreva a sua mensagem"></textarea>
-
+            <div class="form-contact">
+                <form class="form">
+                    <div class="form-data error">
+                        <label for="nome">Nome e Sobrenome </label>
+                        <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Digite seu nome completo" >
+                        <!--palavra reservada para incluir os dados-->
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Você precisa incluir o seu nome!</small>
+                    </div>
+                    
+                    <div class="form-data error">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Este e-mail não está correto.</small>
+                    </div>
+                   
+                    <div class="form-data error">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Confira o número do seu telefone</small>
+                    </div>
+                   
+                    <div class="form-data success">
+                        <label for="mensage">Mensagem</label>
+                        <textarea cols="64" rows="10" id="mensage" class="input-padrao" required placeholder="Escreva a sua mensagem"></textarea>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Você precisa escrever a sua mensagem.</small>
+                    </div>
+                  
                     <!--<fieldset class="forma-contato">
                     <legend>Como quer falar comigo?? </legend>
                     <label for="radio-email"><input type="radio" name="contato" value="email"
@@ -209,6 +229,11 @@
 
         </div>
     </footer>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>
