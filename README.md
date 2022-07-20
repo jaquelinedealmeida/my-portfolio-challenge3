@@ -5,8 +5,13 @@ Desenvolvido para o o Programa ONE - Oracle e Alura - 2022
 
 # Linguagens utilizadas
 
-HTML e CSS
+HTML,  CSS e Javascript. Com validação de formulário.
 
+# Metodologia
+
+A página foi desenvolvida conforme modelo inicial oferecido pelo Programa One, com desenvolvimento e design criados de acordo com meu repertório conhecimento e estudo.
+
+O design tem referência no meu trabalho profissional que, atualmente, está em trânsito entre a comunicação e tecnologia. 
 # Página Web
 [https://jaquelinedealmeida.github.io/my-portfolio-challenge3/]
 

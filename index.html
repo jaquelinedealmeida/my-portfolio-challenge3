@@ -59,6 +59,8 @@
             </p>
         </section>
         <section class="mission">
+
+            <h3><span>Skills</span></h3>
             <p>Oferecemos serviços e ferramentas da Comunicação e Tecnologia que possibilitam
                 simplicidade e sustentabilidade aos nossos clientes.</p>
             <img src="./img/icons8-html-5-50.png">
@@ -89,9 +91,14 @@
                     Atualmente é Coordenadora do Programa internacional re/Start AWS - no Brasil.
                     É professora no Workshop Todas em Tech da Reprograma.
                 </p>
+                <img src="./img/foto_jaqueline.jpg" />
+                
             </div>
 
-            <img src="./img/foto_jaqueline.jpg" />
+            <div class="graduate">
+                <h3><span>Formações</span></h3>
+                <p>Relações Públicas - UNEB <br> Desenvolvedora Front-End - Reprograma <br> UX Design - Design Circuit</p> 
+            </div>
         </section>
 
 
@@ -105,7 +112,7 @@
                 <li>Aulas</li>
 
                 <div class="btn">
-                    <button>Saiba Mais<a href="https://amaracomtecnologia.wordpress.com/" target="_blank"></a></button>
+                    <button><a href="https://amaracomtecnologia.wordpress.com" target="_blank">Saiba Mais</a></button>
        
             </ul>
         </section>
@@ -143,17 +150,17 @@
             <h2>Contatos</h2>
             <img src="./img/undraw_Mobile_posts_re_bpuw.svg" />
             <div class="form-contact">
-                <form class="form">
-                    <div class="form-data error">
+                <form id= "form" class="form">
+                    <div class="form-data">
                         <label for="nome">Nome e Sobrenome </label>
-                        <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Digite seu nome completo" >
+                        <input type="text" id="username" class="input-padrao" required placeholder="Digite seu nome completo" >
                         <!--palavra reservada para incluir os dados-->
                         <i class="fas fa-exclamation-circle"></i>
                         <i class="fas fa-check-circle"></i>
                         <small>Você precisa incluir o seu nome!</small>
                     </div>
                     
-                    <div class="form-data error">
+                    <div class="form-data">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
                         <i class="fas fa-exclamation-circle"></i>
@@ -161,7 +168,7 @@
                         <small>Este e-mail não está correto.</small>
                     </div>
                    
-                    <div class="form-data error">
+                    <div class="form-data">
                         <label for="telefone">Telefone</label>
                         <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
                         <i class="fas fa-exclamation-circle"></i>
@@ -169,7 +176,7 @@
                         <small>Confira o número do seu telefone</small>
                     </div>
                    
-                    <div class="form-data success">
+                    <div class="form-data">
                         <label for="mensage">Mensagem</label>
                         <textarea cols="64" rows="10" id="mensage" class="input-padrao" required placeholder="Escreva a sua mensagem"></textarea>
                         <i class="fas fa-exclamation-circle"></i>
@@ -234,6 +241,8 @@
       src="https://kit.fontawesome.com/f9e19193d6.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

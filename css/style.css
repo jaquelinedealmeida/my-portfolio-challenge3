@@ -38,7 +38,7 @@ h2 {
 .logo {
     margin-left: 2rem;
     margin-top: 1rem;
-    width: 15rem;
+    width: 13rem;
     text-align: left;  
 }
 
@@ -48,7 +48,7 @@ h2 {
     list-style: none;
     position: absolute;
     top: 30px;
-right: 0;    
+     right: 0;    
 }
 
 .nav a {
@@ -64,14 +64,14 @@ right: 0;
 
 li {
     font-family: Inter;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bold;
     padding: .8rem;
     margin-right: 2rem;   
 }
 
 li:hover {
-    font-size:1.1rem;
+    font-size:1.2rem;
 
 }
 
@@ -182,7 +182,7 @@ h3 {
     box-shadow: 10px 10px 10px 0 rgb(246, 247, 248);
     width: 40%;
     margin-top: -30rem;
-    margin-bottom: 6rem;
+    
    
 }
 
@@ -191,16 +191,46 @@ h3 {
     color: white;
     margin-top: 5rem;
     flex-direction:column;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align:left;
 }
 
-.about-we p::first-line {
+.about-we .description  p::first-line {
 font-weight: bold;
 font-size: 2rem;
 font-style: italic;
 color:antiquewhite;
 
+}
+
+.graduate {
+    background-color: white;
+    
+    
+}
+.graduate h3 {
+    color: rgb(238, 133, 41);
+    text-align: left;
+    padding: 1rem;
+    font-size: 2.2rem;
+
+}
+
+.graduate p {
+
+width: 100%;
+font-weight: bold;
+font-size: 1.5rem;
+font-style: italic;
+color:#005F73;
+padding-left: 1rem;
+
+}
+
+.graduate p:hover {
+    font-size: 1.rem;
+    opacity: 30%;
+    
 }
 /*SERVICOS */
 
@@ -214,6 +244,7 @@ color:antiquewhite;
 }
 
 .service img {
+    margin-top: 2rem;
     width: 40%;
     border: solid #005f73; 
     border-bottom-left-radius: 3rem;
@@ -232,9 +263,11 @@ color:antiquewhite;
     display: inline-block;
     vertical-align: top;
     background-color: rgb(177, 88, 10);
-    width: 30%;
+    border-top-right-radius:   3rem;
+    width: 35%;
     padding-top: 1rem;
     margin-top: 5rem;
+    margin-bottom: 5rem;
  
 }
 
@@ -258,26 +291,28 @@ color:antiquewhite;
 button {
     padding: .9rem;
     border-radius: 1rem;
-    background-color: #1dcff2;
+    background-color: #06bce0;
     border: none;
     font-size: 1rem;
-    margin-right: 2rem;
-    color:rgb(7, 28, 50);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-weight: bold;   
     cursor: pointer;
 }
 
-.btn {
+.btn a {
    
    text-align: center;
-   padding-top: 1rem;
    padding-bottom: 1rem;
-   margin-right: 1rem;
+   color:rgb(246, 168, 66);
+   text-decoration: none;
       
 }
 button:hover {
     background-color: antiquewhite;
-    transition: all 1s;
+    color: #06bce0;
+    transition: all .5s;
 }
 
 /*PORTFOLIO*/
@@ -307,7 +342,7 @@ button:hover {
 }
 
 .cases:hover {
-  width: 30%;
+  width: 60%;
 }
 
 .images a {
