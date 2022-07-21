@@ -8,6 +8,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     checkInputs();
+   
 });
 
 function checkInputs() {
@@ -22,17 +23,18 @@ function checkInputs() {
         setSucessFor(username);
     }
 
-    if(emailValue === "") {
+
+    if(emailValue === "" || emailValue.indexOf("@") === -1 || emailValue.indexOf(".") === -1 || (emailValue.indexOf(".") - emailValue.indexOf("@") == -1)){
         setErrorFor(email, "O e-mail é obrigatório");
-    } else if (checkEmail(emailValue)) {
+    } else if (!checkEmail(emailValue)) {
         setErrorFor(email,"Por favor, insira um e-mail válido");
     }else {
         setSucessFor(email);
     }
 
     if(telefoneValue === "") {
-        setErrorFor(telefone, 'O número do telefone é obrigatório');
-    } else if (telefoneValue.length < 10 ) {
+        setErrorFor(telefone, "O número do telefone é obrigatório");
+    } else if (!telephoneCheck(telefoneValue)) {
         setErrorFor(telefone, 'O número do telefone precisa ter no mínimo 10 dígitos');
     }else {
         setSucessFor(telefone);
@@ -46,12 +48,13 @@ function checkInputs() {
 
     const formDatas = form.querySelectorAll(".form-data");
 
-    const formIsValid = [...formDatas].every((formData) => {
-        return formData.className === " form-data sucess";
+     const formIsValid = [...formDatas].every((formData) => {
+        //transformando nodelist em um array paadrão
+        return formData.className === "form-data sucess";
     });
 
     if(formIsValid) {
-        console.log("O formulário está 100% válido")
+        alert("Sua mensagem foi enviada. Obrigada");
     }
 }
 
@@ -59,7 +62,7 @@ function setErrorFor(input, message) {
     const formData = input.parentElement;
     const small = formData.querySelector("small");
 
-    //Adciona a mensagem de error
+    //Adciona a mensagem de erro
     small.innerText = message;
 
     //Adciona class de erro
@@ -81,3 +84,15 @@ function checkEmail(email) {
     );
 
 }
+
+function telephoneCheck(phone) {
+    let regex = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
+    return regex.test(phone);
+  }
+  
+  telephoneCheck("(55)55555-5555");
+  telephoneCheck("(55)5555-55555");
+  telephoneCheck("(55) 55555-55555");
+  telephoneCheck("(55) 5555-55555");
+  telephoneCheck("5555555555");
+  telephoneCheck("55555555555");

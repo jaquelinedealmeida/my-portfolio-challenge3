@@ -29,7 +29,7 @@ form {
     margin-top: 4rem;
     margin-bottom: 4rem;
     margin-right: 10rem;
-   
+  
     max-width: 48.6rem;
    
 }
@@ -53,10 +53,24 @@ form label, form  legend{
  
 }
 
-input, textarea {
+input {
     outline: none;
     border-color: white;
-    padding: 0.5rem;
+    padding: 0.7rem;
+}
+
+textarea {
+    border-color: white;
+    padding: 0.9rem;
+    outline: none;
+
+
+}
+
+placeholder {
+    font-family: Inter;
+    font-size: 1.3rem;
+    color: rgb(7, 6, 6);
 }
 
 .form-data {
@@ -67,7 +81,7 @@ input, textarea {
 
 .form-data i {
     position: absolute;
-    top:55px;
+    top:60px;
     right: 5rem;
     visibility: hidden;
 }
@@ -92,7 +106,7 @@ input, textarea {
 }
 
 .enviar {
-    width: 50%;
+    width: 90%;
     padding: 15px 0;
     background: rgb(183, 88, 4);
     color: white;
@@ -102,26 +116,26 @@ input, textarea {
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
-    margin-left: 6rem;
+    margin-left:1.1rem;
     margin-top:1.9rem;
 
 }
 
 .enviar:hover {
     background-color: rgb(183, 88, 4);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
 
 /*ERROR AND SUCCESS*/
 
-.form-data.success textarea {
-    border-color:rgb(4, 249, 29);
+.form-data.sucess input, textarea {
+    border-color: 0.5rem rgb(4, 249, 29) solid !important;
 }
 
-.form-data.error  input {
-    border-color:rgb(255, 45, 3);
+.form-data.error input, textarea {
+    border-color: 0.5rem rgb(255, 45, 3) solid !important;
   
 }
 
@@ -139,5 +153,5 @@ input, textarea {
 
 .form-data.error small {
     visibility:visible; 
-    color:rgb(243, 226, 212);
+    color:rgb(247, 187, 145);
 }
