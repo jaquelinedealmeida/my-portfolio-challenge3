@@ -1,6 +1,6 @@
 
 .contact {
-    width: 100vw;
+
     background-color: #005f73; 
     padding-left: 7rem;
     padding-top: 3rem;
@@ -123,7 +123,7 @@ placeholder {
 
 .enviar:hover {
     background-color: rgb(183, 88, 4);
-    transform: scale(1.1);
+    transform: scale(1.);
 }
 
 

@@ -67,7 +67,7 @@ li {
     font-size: 1.1rem;
     font-weight: bold;
     padding: .8rem;
-    margin-right: 2rem;   
+    padding-right: 2rem;   
 }
 
 li:hover {
@@ -83,9 +83,8 @@ li:hover {
     display: flex;
     justify-content:space-evenly;
     padding-top: 12rem;
-    padding-right: 0;
-    width: 100vw;
- 
+    
+   
   
 }
 
@@ -113,8 +112,9 @@ h1 {
 /*HISTORY*/
 
 .history {
-    width: 100vw;
+    
     display: flex;
+    justify-content:center;
 }
 strong {
     color: #005f73; 
@@ -124,14 +124,15 @@ strong {
 .history p {
     font-size: 1.5rem;
     color:rgb(7, 6, 6);
-    margin-right: 5rem;
+   width: 80%;
+   text-align: center;
 }
 
 .mission {
     margin: auto;
-    width: 80%;
-    text-align: center;
+    width: 50%;
     font-weight: bold;
+    text-align: center;
     
 }
 
@@ -252,7 +253,7 @@ padding-left: 1rem;
 /*SERVICOS */
 
 .service {
-    width: 100vw;
+  
     padding-bottom: 10rem;
 }
 
@@ -338,8 +339,7 @@ a:hover {
 
 /*PORTFOLIO*/
 
-.portfolio {
-    width: 100vw; 
+.portfolio { 
     padding-bottom: 10rem;
     background-color:rgb(206, 104, 21);
     opacity: 90%;

@@ -86,7 +86,7 @@ function checkEmail(email) {
 }
 
 function telephoneCheck(phone) {
-    let regex = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
+    let regex = new RegExp(/^\+?\(?([0-9]{2})?\)?\s?[0-9]{4,5}(-|\s)?[0-9]{4}$/);
     return regex.test(phone);
   }
   
