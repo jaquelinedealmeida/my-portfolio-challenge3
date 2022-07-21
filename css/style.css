@@ -21,7 +21,7 @@ h2 {
 }
 
 .banner, .history, .about-we, .service, .portfolio{   
-   padding-left: 5rem;
+   padding-left: 4rem;
    padding-top: 3rem;
    box-sizing: border-box;  
 }
@@ -82,17 +82,13 @@ li:hover {
     background-color: #ce6815;
     display: flex;
     justify-content:space-evenly;
-    padding-top: 12rem;
-    
-   
-  
+    padding-top: 12rem; 
 }
 
 .black_woman_tech{
     max-width: 30%;
     text-align: center;
-    margin-bottom: 2rem;
-         
+    margin-bottom: 2rem;         
 }
 
 h1 {
@@ -102,11 +98,12 @@ h1 {
     text-align:center;
 
 }
+
+
 .title_banner p {
-     color: #005f73; 
-     font-size: 2em;
-     font-weight: bold;
-    
+    color: #005f73; 
+    font-size: 2em;
+    font-weight: bold;    
 }
 
 /*HISTORY*/
@@ -173,8 +170,7 @@ strong {
 }
 
 
-
-/*ABOUT8*/
+/*ABOUT*/
 .about-we {
     width: 100;
     background-color:#005F73;
@@ -241,8 +237,6 @@ font-style: italic;
 color:#005F73;
 padding-left: 1rem;
 
-
-
 }
 
 .graduate p:hover {
@@ -253,8 +247,8 @@ padding-left: 1rem;
 /*SERVICOS */
 
 .service {
+    padding-bottom: 1rem;
   
-    padding-bottom: 10rem;
 }
 
 .service h2 {
@@ -340,10 +334,9 @@ a:hover {
 /*PORTFOLIO*/
 
 .portfolio { 
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
     background-color:rgb(206, 104, 21);
-    opacity: 90%;
-  
+   
 }
 .portfolio h2 {
     color:#ffffff;
@@ -359,7 +352,8 @@ a:hover {
     border-radius: 3rem;
     cursor: pointer;
     transition: all 0.2s;
-    width: 90%;
+    width: 85%;
+    display: flex;
 }
 
 .cases:hover {
@@ -374,8 +368,10 @@ a:hover {
 }
 
 .images p {
-    text-align: center;
-    margin-right: 6rem;
+   text-align: center;
+   margin-right: 70px;
+   
+   
 }
 
 
