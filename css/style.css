@@ -179,19 +179,17 @@ strong {
 }
 
 .about-we h2{
-    color: rgb(247, 245, 244);
+   color: rgb(247, 245, 244);
 
 }
 
 .about-we img {
    margin-left: 45%;
-    border: solid rgb(246, 247, 248);
-    border-bottom-right-radius: 3rem;
-    box-shadow: 10px 10px 10px 0 rgb(246, 247, 248);
-    width: 40%;
-    margin-top: -30rem;
-    
-   
+   border: solid rgb(246, 247, 248);
+   border-bottom-right-radius: 3rem;
+   box-shadow: 10px 10px 10px 0 rgb(246, 247, 248);
+   width: 40%;
+   margin-top: -30rem;  
 }
 
 .about-we p {
@@ -225,7 +223,6 @@ color:antiquewhite;
     padding-left: .7rem;
     font-size: 2.2rem;
     font-family: Inter;
-
 }
 
 .graduate p {
@@ -247,7 +244,7 @@ padding-left: 1rem;
 /*SERVICOS */
 
 .service {
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
   
 }
 
@@ -334,7 +331,7 @@ a:hover {
 /*PORTFOLIO*/
 
 .portfolio { 
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     background-color:rgb(206, 104, 21);
    
 }
@@ -369,9 +366,7 @@ a:hover {
 
 .images p {
    text-align: center;
-   margin-right: 70px;
-   
-   
+   margin-right: 70px; 
 }
 
 
